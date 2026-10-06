@@ -1,5 +1,3 @@
-const { createRef } = require("react");
-
 $(function () {
   // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
@@ -33,22 +31,30 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-    createPlatform(300,650,105,20,"magenta")
-    createPlatform(500,470, 105, 20, "magenta")
-    createPlatform(600,400, 300, 20, "magenta")
-    createPlatform(200, 545, 105, 20, "magenta")
-    createPlatform(300,600,105,20, "magenta")
+    createPlatform(300, 650, 105, 20,"hotpink");
+    createPlatform(500, 470, 105, 20, "hotpink");
+    createPlatform(600, 400, 300, 20, "hotpink");
+    createPlatform(200, 545, 105, 20, "hotpink");
+    createPlatform(400, 300, 105, 20, "hotpink");
+    createPlatform(1000, 550, 105, 20, "hotpink");
+    
 
 
 
 
     // TODO 3 - Create Collectables
-    createCollectable("diamond", 600,400)
+    createCollectable("diamond", 850,360)
+    createCollectable("diamond", 1035, 515)
+    createCollectable("diamond",450, 265)
 
 
 
     
     // TODO 4 - Create Cannons
+    createCannon("right", 500, 1300)
+    creatCannon("right", 100, 1300)
+    createCannon("right", 200, 1300)
+    
 
 
     
